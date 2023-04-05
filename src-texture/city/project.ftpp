@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "version": "0.6.7"
+  },
+  "savePath": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/city",
+  "images": [
+    {
+      "name": "City-Layer-1.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/city/City-Layer-1.png",
+      "folder": ""
+    },
+    {
+      "name": "City-Layer-2.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/city/City-Layer-2.png",
+      "folder": ""
+    },
+    {
+      "name": "City-Layer-3.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/city/City-Layer-3.png",
+      "folder": ""
+    },
+    {
+      "name": "City-Layer-4.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/city/City-Layer-4.png",
+      "folder": ""
+    },
+    {
+      "name": "City-Layer-5.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/city/City-Layer-5.png",
+      "folder": ""
+    }
+  ],
+  "folders": [],
+  "packOptions": {
+    "textureName": "city-spritesheet",
+    "textureFormat": "png",
+    "removeFileExtension": false,
+    "prependFolderName": true,
+    "base64Export": false,
+    "tinify": false,
+    "tinifyKey": "",
+    "scale": 1,
+    "filter": "none",
+    "exporter": "JSON (hash)",
+    "fileName": "pack-result",
+    "savePath": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/city",
+    "width": 4000,
+    "height": 4000,
+    "fixedSize": false,
+    "powerOfTwo": false,
+    "padding": 1,
+    "extrude": 0,
+    "allowRotation": false,
+    "allowTrim": true,
+    "trimMode": "trim",
+    "alphaThreshold": "0",
+    "detectIdentical": true,
+    "packer": "MaxRectsPacker",
+    "packerMethod": "Smart"
+  }
+}

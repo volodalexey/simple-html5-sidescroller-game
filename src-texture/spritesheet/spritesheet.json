@@ -1,0 +1,1791 @@
+{
+  "frames": {
+    "Spider-4.png": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 116,
+        "h": 142
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 116,
+        "h": 142
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Spider-5.png": {
+      "frame": {
+        "x": 119,
+        "y": 1,
+        "w": 114,
+        "h": 142
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 1,
+        "w": 114,
+        "h": 142
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Spider-1.png": {
+      "frame": {
+        "x": 1,
+        "y": 145,
+        "w": 114,
+        "h": 142
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 1,
+        "w": 114,
+        "h": 142
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Spider-0.png": {
+      "frame": {
+        "x": 117,
+        "y": 145,
+        "w": 110,
+        "h": 142
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 110,
+        "h": 142
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Spider-2.png": {
+      "frame": {
+        "x": 229,
+        "y": 145,
+        "w": 116,
+        "h": 142
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 116,
+        "h": 142
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Spider-3.png": {
+      "frame": {
+        "x": 1,
+        "y": 289,
+        "w": 120,
+        "h": 140
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 2,
+        "w": 120,
+        "h": 140
+      },
+      "sourceSize": {
+        "w": 120,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Fire.png": {
+      "frame": {
+        "x": 235,
+        "y": 1,
+        "w": 100,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 90
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Boom-1.png": {
+      "frame": {
+        "x": 123,
+        "y": 289,
+        "w": 98,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 4,
+        "w": 98,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 90
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Jump-6.png": {
+      "frame": {
+        "x": 223,
+        "y": 289,
+        "w": 88,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 88,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Jump-0.png": {
+      "frame": {
+        "x": 347,
+        "y": 1,
+        "w": 88,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 0,
+        "w": 88,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Jump-5.png": {
+      "frame": {
+        "x": 347,
+        "y": 94,
+        "w": 88,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 88,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Jump-4.png": {
+      "frame": {
+        "x": 347,
+        "y": 186,
+        "w": 88,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 88,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Jump-2.png": {
+      "frame": {
+        "x": 347,
+        "y": 278,
+        "w": 88,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 0,
+        "w": 88,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Jump-1.png": {
+      "frame": {
+        "x": 1,
+        "y": 431,
+        "w": 88,
+        "h": 90
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 0,
+        "w": 88,
+        "h": 90
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Run-7.png": {
+      "frame": {
+        "x": 123,
+        "y": 373,
+        "w": 89,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 6,
+        "w": 89,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Run-6.png": {
+      "frame": {
+        "x": 313,
+        "y": 370,
+        "w": 89,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 8,
+        "w": 89,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Dizzy-05.png": {
+      "frame": {
+        "x": 214,
+        "y": 382,
+        "w": 89,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 13,
+        "w": 89,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Run-5.png": {
+      "frame": {
+        "x": 437,
+        "y": 1,
+        "w": 89,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 10,
+        "w": 89,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Jump-3.png": {
+      "frame": {
+        "x": 437,
+        "y": 84,
+        "w": 87,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 87,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Run-4.png": {
+      "frame": {
+        "x": 437,
+        "y": 175,
+        "w": 89,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 89,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Run-3.png": {
+      "frame": {
+        "x": 437,
+        "y": 255,
+        "w": 89,
+        "h": 77
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 14,
+        "w": 89,
+        "h": 77
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Roll-0.png": {
+      "frame": {
+        "x": 437,
+        "y": 334,
+        "w": 63,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 16,
+        "y": 0,
+        "w": 63,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Dizzy-07.png": {
+      "frame": {
+        "x": 404,
+        "y": 425,
+        "w": 88,
+        "h": 79
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 12,
+        "w": 88,
+        "h": 79
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Roll-1.png": {
+      "frame": {
+        "x": 1,
+        "y": 523,
+        "w": 64,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 16,
+        "y": 0,
+        "w": 64,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Roll-3.png": {
+      "frame": {
+        "x": 67,
+        "y": 523,
+        "w": 63,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 63,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Run-0.png": {
+      "frame": {
+        "x": 305,
+        "y": 455,
+        "w": 88,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 88,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Boom-3.png": {
+      "frame": {
+        "x": 395,
+        "y": 506,
+        "w": 86,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 1,
+        "w": 86,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 90
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Fall-5.png": {
+      "frame": {
+        "x": 132,
+        "y": 462,
+        "w": 88,
+        "h": 77
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
+        "y": 12,
+        "w": 88,
+        "h": 77
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Run-8.png": {
+      "frame": {
+        "x": 528,
+        "y": 1,
+        "w": 88,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 3,
+        "w": 88,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Sit-4.png": {
+      "frame": {
+        "x": 132,
+        "y": 541,
+        "w": 88,
+        "h": 69
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 22,
+        "w": 88,
+        "h": 69
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Fall-6.png": {
+      "frame": {
+        "x": 528,
+        "y": 81,
+        "w": 87,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 13,
+        "y": 12,
+        "w": 87,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Roll-2.png": {
+      "frame": {
+        "x": 483,
+        "y": 506,
+        "w": 63,
+        "h": 87
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 63,
+        "h": 87
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Fall-4.png": {
+      "frame": {
+        "x": 494,
+        "y": 425,
+        "w": 87,
+        "h": 77
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
+        "y": 12,
+        "w": 87,
+        "h": 77
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Roll-4.png": {
+      "frame": {
+        "x": 502,
+        "y": 334,
+        "w": 64,
+        "h": 87
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 64,
+        "h": 87
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Dizzy-10.png": {
+      "frame": {
+        "x": 528,
+        "y": 161,
+        "w": 87,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 13,
+        "w": 87,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Dizzy-09.png": {
+      "frame": {
+        "x": 528,
+        "y": 241,
+        "w": 87,
+        "h": 79
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 12,
+        "w": 87,
+        "h": 79
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Fall-3.png": {
+      "frame": {
+        "x": 1,
+        "y": 613,
+        "w": 87,
+        "h": 77
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 12,
+        "w": 87,
+        "h": 77
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Run-1.png": {
+      "frame": {
+        "x": 90,
+        "y": 613,
+        "w": 87,
+        "h": 77
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 9,
+        "w": 87,
+        "h": 77
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Fall-2.png": {
+      "frame": {
+        "x": 179,
+        "y": 612,
+        "w": 87,
+        "h": 77
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 12,
+        "w": 87,
+        "h": 77
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Dizzy-08.png": {
+      "frame": {
+        "x": 268,
+        "y": 596,
+        "w": 87,
+        "h": 79
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 12,
+        "w": 87,
+        "h": 79
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Fall-1.png": {
+      "frame": {
+        "x": 357,
+        "y": 596,
+        "w": 87,
+        "h": 77
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 12,
+        "w": 87,
+        "h": 77
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Dizzy-06.png": {
+      "frame": {
+        "x": 446,
+        "y": 596,
+        "w": 87,
+        "h": 79
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 12,
+        "w": 87,
+        "h": 79
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Dizzy-04.png": {
+      "frame": {
+        "x": 535,
+        "y": 595,
+        "w": 87,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 13,
+        "w": 87,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Dizzy-03.png": {
+      "frame": {
+        "x": 624,
+        "y": 1,
+        "w": 87,
+        "h": 79
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 12,
+        "w": 87,
+        "h": 79
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Fall-0.png": {
+      "frame": {
+        "x": 624,
+        "y": 82,
+        "w": 87,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 12,
+        "w": 87,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Sit-0.png": {
+      "frame": {
+        "x": 624,
+        "y": 162,
+        "w": 87,
+        "h": 69
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 22,
+        "w": 87,
+        "h": 69
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Dizzy-02.png": {
+      "frame": {
+        "x": 624,
+        "y": 233,
+        "w": 87,
+        "h": 79
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 12,
+        "w": 87,
+        "h": 79
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Plant-1.png": {
+      "frame": {
+        "x": 548,
+        "y": 504,
+        "w": 60,
+        "h": 87
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 60,
+        "h": 87
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 87
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Stand-0.png": {
+      "frame": {
+        "x": 624,
+        "y": 314,
+        "w": 87,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 10,
+        "w": 87,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Dizzy-00.png": {
+      "frame": {
+        "x": 624,
+        "y": 397,
+        "w": 87,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 13,
+        "w": 87,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Dizzy-01.png": {
+      "frame": {
+        "x": 624,
+        "y": 477,
+        "w": 87,
+        "h": 79
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 12,
+        "w": 87,
+        "h": 79
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Stand-6.png": {
+      "frame": {
+        "x": 624,
+        "y": 558,
+        "w": 87,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 10,
+        "w": 87,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Stand-5.png": {
+      "frame": {
+        "x": 1,
+        "y": 692,
+        "w": 86,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 10,
+        "y": 10,
+        "w": 86,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Stand-1.png": {
+      "frame": {
+        "x": 89,
+        "y": 692,
+        "w": 86,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 10,
+        "w": 86,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Boom-4.png": {
+      "frame": {
+        "x": 357,
+        "y": 675,
+        "w": 86,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 5,
+        "w": 86,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 90
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Boom-2.png": {
+      "frame": {
+        "x": 222,
+        "y": 462,
+        "w": 80,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 10,
+        "y": 2,
+        "w": 80,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 90
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Plant-0.png": {
+      "frame": {
+        "x": 268,
+        "y": 677,
+        "w": 60,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 60,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 87
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Stand-4.png": {
+      "frame": {
+        "x": 177,
+        "y": 692,
+        "w": 85,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 10,
+        "w": 85,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Run-2.png": {
+      "frame": {
+        "x": 624,
+        "y": 641,
+        "w": 85,
+        "h": 76
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 15,
+        "w": 85,
+        "h": 76
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Boom-0.png": {
+      "frame": {
+        "x": 535,
+        "y": 675,
+        "w": 84,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 5,
+        "w": 84,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 90
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Sit-3.png": {
+      "frame": {
+        "x": 445,
+        "y": 677,
+        "w": 84,
+        "h": 68
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 23,
+        "w": 84,
+        "h": 68
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Stand-2.png": {
+      "frame": {
+        "x": 713,
+        "y": 1,
+        "w": 84,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 10,
+        "w": 84,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Sit-1.png": {
+      "frame": {
+        "x": 713,
+        "y": 84,
+        "w": 84,
+        "h": 68
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 10,
+        "y": 23,
+        "w": 84,
+        "h": 68
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Stand-3.png": {
+      "frame": {
+        "x": 713,
+        "y": 154,
+        "w": 82,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 13,
+        "y": 11,
+        "w": 82,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Sit-2.png": {
+      "frame": {
+        "x": 713,
+        "y": 236,
+        "w": 80,
+        "h": 68
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 15,
+        "y": 23,
+        "w": 80,
+        "h": 68
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Fly-5.png": {
+      "frame": {
+        "x": 222,
+        "y": 550,
+        "w": 60,
+        "h": 42
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 2,
+        "w": 60,
+        "h": 42
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 44
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Fly-2.png": {
+      "frame": {
+        "x": 284,
+        "y": 550,
+        "w": 60,
+        "h": 42
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 60,
+        "h": 42
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 44
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Fly-0.png": {
+      "frame": {
+        "x": 235,
+        "y": 93,
+        "w": 60,
+        "h": 42
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 60,
+        "h": 42
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 44
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Fly-3.png": {
+      "frame": {
+        "x": 621,
+        "y": 719,
+        "w": 59,
+        "h": 42
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 2,
+        "w": 59,
+        "h": 42
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 44
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Fly-1.png": {
+      "frame": {
+        "x": 682,
+        "y": 719,
+        "w": 59,
+        "h": 42
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 2,
+        "w": 59,
+        "h": 42
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 44
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Roll-6.png": {
+      "frame": {
+        "x": 568,
+        "y": 322,
+        "w": 52,
+        "h": 53
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 25,
+        "y": 36,
+        "w": 52,
+        "h": 53
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Dog-Roll-5.png": {
+      "frame": {
+        "x": 743,
+        "y": 306,
+        "w": 51,
+        "h": 51
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 25,
+        "y": 37,
+        "w": 51,
+        "h": 51
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Lives.png": {
+      "frame": {
+        "x": 743,
+        "y": 359,
+        "w": 50,
+        "h": 50
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 50
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Fly-4.png": {
+      "frame": {
+        "x": 284,
+        "y": 550,
+        "w": 60,
+        "h": 42
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 60,
+        "h": 42
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 44
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "spritesheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 798,
+      "h": 774
+    },
+    "scale": 1
+  }
+}

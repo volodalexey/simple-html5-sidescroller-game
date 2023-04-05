@@ -1,0 +1,406 @@
+{
+  "meta": {
+    "version": "0.6.7"
+  },
+  "savePath": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet",
+  "images": [
+    {
+      "name": "Boom-0.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Boom-0.png",
+      "folder": ""
+    },
+    {
+      "name": "Boom-1.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Boom-1.png",
+      "folder": ""
+    },
+    {
+      "name": "Boom-2.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Boom-2.png",
+      "folder": ""
+    },
+    {
+      "name": "Boom-3.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Boom-3.png",
+      "folder": ""
+    },
+    {
+      "name": "Boom-4.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Boom-4.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Dizzy-00.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Dizzy-00.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Dizzy-01.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Dizzy-01.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Dizzy-02.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Dizzy-02.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Dizzy-03.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Dizzy-03.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Dizzy-04.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Dizzy-04.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Dizzy-05.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Dizzy-05.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Dizzy-06.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Dizzy-06.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Dizzy-07.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Dizzy-07.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Dizzy-08.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Dizzy-08.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Dizzy-09.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Dizzy-09.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Dizzy-10.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Dizzy-10.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Fall-0.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Fall-0.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Fall-1.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Fall-1.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Fall-2.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Fall-2.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Fall-3.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Fall-3.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Fall-4.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Fall-4.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Fall-5.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Fall-5.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Fall-6.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Fall-6.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Jump-0.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Jump-0.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Jump-1.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Jump-1.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Jump-2.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Jump-2.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Jump-3.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Jump-3.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Jump-4.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Jump-4.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Jump-5.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Jump-5.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Jump-6.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Jump-6.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Roll-0.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Roll-0.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Roll-1.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Roll-1.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Roll-2.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Roll-2.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Roll-3.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Roll-3.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Roll-4.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Roll-4.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Roll-5.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Roll-5.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Roll-6.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Roll-6.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Run-0.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Run-0.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Run-1.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Run-1.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Run-2.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Run-2.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Run-3.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Run-3.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Run-4.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Run-4.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Run-5.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Run-5.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Run-6.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Run-6.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Run-7.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Run-7.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Run-8.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Run-8.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Sit-0.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Sit-0.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Sit-1.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Sit-1.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Sit-2.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Sit-2.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Sit-3.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Sit-3.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Sit-4.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Sit-4.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Stand-0.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Stand-0.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Stand-1.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Stand-1.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Stand-2.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Stand-2.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Stand-3.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Stand-3.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Stand-4.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Stand-4.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Stand-5.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Stand-5.png",
+      "folder": ""
+    },
+    {
+      "name": "Dog-Stand-6.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Dog-Stand-6.png",
+      "folder": ""
+    },
+    {
+      "name": "Fire.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Fire.png",
+      "folder": ""
+    },
+    {
+      "name": "Fly-0.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Fly-0.png",
+      "folder": ""
+    },
+    {
+      "name": "Fly-1.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Fly-1.png",
+      "folder": ""
+    },
+    {
+      "name": "Fly-2.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Fly-2.png",
+      "folder": ""
+    },
+    {
+      "name": "Fly-3.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Fly-3.png",
+      "folder": ""
+    },
+    {
+      "name": "Fly-4.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Fly-4.png",
+      "folder": ""
+    },
+    {
+      "name": "Fly-5.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Fly-5.png",
+      "folder": ""
+    },
+    {
+      "name": "Lives.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Lives.png",
+      "folder": ""
+    },
+    {
+      "name": "Plant-0.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Plant-0.png",
+      "folder": ""
+    },
+    {
+      "name": "Plant-1.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Plant-1.png",
+      "folder": ""
+    },
+    {
+      "name": "Spider-0.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Spider-0.png",
+      "folder": ""
+    },
+    {
+      "name": "Spider-1.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Spider-1.png",
+      "folder": ""
+    },
+    {
+      "name": "Spider-2.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Spider-2.png",
+      "folder": ""
+    },
+    {
+      "name": "Spider-3.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Spider-3.png",
+      "folder": ""
+    },
+    {
+      "name": "Spider-4.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Spider-4.png",
+      "folder": ""
+    },
+    {
+      "name": "Spider-5.png",
+      "path": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet/Spider-5.png",
+      "folder": ""
+    }
+  ],
+  "folders": [],
+  "packOptions": {
+    "textureName": "spritesheet",
+    "textureFormat": "png",
+    "removeFileExtension": false,
+    "prependFolderName": true,
+    "base64Export": false,
+    "tinify": false,
+    "tinifyKey": "",
+    "scale": 1,
+    "filter": "none",
+    "exporter": "JSON (hash)",
+    "fileName": "pack-result",
+    "savePath": "/mnt/mystorage/js_projects/simple-html5-sidescroller-game/src-texture/spritesheet",
+    "width": 4000,
+    "height": 4000,
+    "fixedSize": false,
+    "powerOfTwo": false,
+    "padding": 1,
+    "extrude": 0,
+    "allowRotation": false,
+    "allowTrim": true,
+    "trimMode": "trim",
+    "alphaThreshold": "0",
+    "detectIdentical": true,
+    "packer": "MaxRectsPacker",
+    "packerMethod": "Smart"
+  }
+}
