@@ -112,7 +112,7 @@ export class Jumping extends PlayerState {
     } else if (inputHandler.hasSpecial()) {
       player.setState(EPlayerState.ROLLING, 2)
     } else if (inputHandler.hasDirectionDown()) {
-      player.setState(EPlayerState.DIVING, 0)
+      player.setState(EPlayerState.DIVING, 2)
     }
   }
 }
@@ -132,7 +132,7 @@ export class Falling extends PlayerState {
     if (player.isOnGround()) {
       player.setState(EPlayerState.RUNNING, 1)
     } else if (inputHandler.hasDirectionDown()) {
-      player.setState(EPlayerState.DIVING, 0)
+      player.setState(EPlayerState.DIVING, 2)
     }
   }
 }
@@ -167,7 +167,7 @@ export class Rolling extends PlayerState {
     ) {
       player.jump()
     } else if (inputHandler.hasDirectionDown() && !player.isOnGround()) {
-      player.setState(EPlayerState.DIVING, 0)
+      player.setState(EPlayerState.DIVING, 2)
     }
   }
 }

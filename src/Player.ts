@@ -246,6 +246,13 @@ export class Player extends Container {
     }
   }
 
+  restart (): void {
+    this.position.set(0, 0)
+    this.velocity.vx = 0
+    this.velocity.vy = 0
+    this.setState(EPlayerState.SITTING)
+  }
+
   checkCollision (): void {
     // this.game.enemies.forEach((enemy) => {
     //   if (
