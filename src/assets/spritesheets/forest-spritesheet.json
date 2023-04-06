@@ -5,15 +5,15 @@
         "x": 1,
         "y": 1,
         "w": 1667,
-        "h": 499
+        "h": 500
       },
       "rotated": false,
-      "trimmed": true,
+      "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
-        "y": 1,
+        "y": 0,
         "w": 1667,
-        "h": 499
+        "h": 500
       },
       "sourceSize": {
         "w": 1667,
@@ -27,65 +27,17 @@
     "Forest-Layer-2.png": {
       "frame": {
         "x": 1,
-        "y": 502,
+        "y": 503,
         "w": 1667,
-        "h": 499
+        "h": 500
       },
       "rotated": false,
-      "trimmed": true,
+      "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
         "w": 1667,
-        "h": 499
-      },
-      "sourceSize": {
-        "w": 1667,
         "h": 500
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "Forest-Layer-4.png": {
-      "frame": {
-        "x": 1,
-        "y": 1003,
-        "w": 1667,
-        "h": 207
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 1667,
-        "h": 207
-      },
-      "sourceSize": {
-        "w": 1667,
-        "h": 500
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "Forest-Layer-5.png": {
-      "frame": {
-        "x": 1,
-        "y": 1212,
-        "w": 1667,
-        "h": 129
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 371,
-        "w": 1667,
-        "h": 129
       },
       "sourceSize": {
         "w": 1667,
@@ -99,17 +51,65 @@
     "Forest-Layer-3.png": {
       "frame": {
         "x": 1,
-        "y": 1343,
-        "w": 1631,
-        "h": 376
+        "y": 1005,
+        "w": 1667,
+        "h": 500
       },
       "rotated": false,
-      "trimmed": true,
+      "trimmed": false,
       "spriteSourceSize": {
-        "x": 22,
-        "y": 47,
-        "w": 1631,
-        "h": 376
+        "x": 0,
+        "y": 0,
+        "w": 1667,
+        "h": 500
+      },
+      "sourceSize": {
+        "w": 1667,
+        "h": 500
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Forest-Layer-4.png": {
+      "frame": {
+        "x": 1,
+        "y": 1507,
+        "w": 1667,
+        "h": 500
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1667,
+        "h": 500
+      },
+      "sourceSize": {
+        "w": 1667,
+        "h": 500
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Forest-Layer-5.png": {
+      "frame": {
+        "x": 1,
+        "y": 2009,
+        "w": 1667,
+        "h": 500
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1667,
+        "h": 500
       },
       "sourceSize": {
         "w": 1667,
@@ -128,7 +128,7 @@
     "format": "RGBA8888",
     "size": {
       "w": 1669,
-      "h": 1720
+      "h": 2510
     },
     "scale": 1
   }

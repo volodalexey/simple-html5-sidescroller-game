@@ -70,7 +70,7 @@ export class Splash extends Particle {
   constructor ({ game }: IParticleChildOptions) {
     super({ game, texture: Splash.texturesCache })
     this.width = Math.random() * 100 + 100
-    this.velocity.vx = Math.random() * 6 - 4
+    this.velocity.vx = Math.random() * 10 - 5
     this.velocity.vy = Math.random() * 2 + 1
   }
 

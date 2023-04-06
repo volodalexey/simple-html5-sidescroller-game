@@ -24,68 +24,20 @@
         "y": 0.5
       }
     },
-    "City-Layer-4.png": {
+    "City-Layer-2.png": {
       "frame": {
         "x": 1,
         "y": 503,
         "w": 1667,
-        "h": 382
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 118,
-        "w": 1667,
-        "h": 382
-      },
-      "sourceSize": {
-        "w": 1667,
         "h": 500
       },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "City-Layer-5.png": {
-      "frame": {
-        "x": 1,
-        "y": 887,
-        "w": 1667,
-        "h": 85
-      },
       "rotated": false,
-      "trimmed": true,
+      "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
-        "y": 415,
-        "w": 1667,
-        "h": 85
-      },
-      "sourceSize": {
+        "y": 0,
         "w": 1667,
         "h": 500
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "City-Layer-2.png": {
-      "frame": {
-        "x": 1,
-        "y": 974,
-        "w": 1564,
-        "h": 365
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 50,
-        "y": 61,
-        "w": 1564,
-        "h": 365
       },
       "sourceSize": {
         "w": 1667,
@@ -99,17 +51,65 @@
     "City-Layer-3.png": {
       "frame": {
         "x": 1,
-        "y": 1341,
-        "w": 1504,
-        "h": 96
+        "y": 1005,
+        "w": 1667,
+        "h": 500
       },
       "rotated": false,
-      "trimmed": true,
+      "trimmed": false,
       "spriteSourceSize": {
-        "x": 74,
-        "y": 14,
-        "w": 1504,
-        "h": 96
+        "x": 0,
+        "y": 0,
+        "w": 1667,
+        "h": 500
+      },
+      "sourceSize": {
+        "w": 1667,
+        "h": 500
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "City-Layer-4.png": {
+      "frame": {
+        "x": 1,
+        "y": 1507,
+        "w": 1667,
+        "h": 500
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1667,
+        "h": 500
+      },
+      "sourceSize": {
+        "w": 1667,
+        "h": 500
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "City-Layer-5.png": {
+      "frame": {
+        "x": 1,
+        "y": 2009,
+        "w": 1667,
+        "h": 500
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1667,
+        "h": 500
       },
       "sourceSize": {
         "w": 1667,
@@ -128,7 +128,7 @@
     "format": "RGBA8888",
     "size": {
       "w": 1669,
-      "h": 1438
+      "h": 2510
     },
     "scale": 1
   }

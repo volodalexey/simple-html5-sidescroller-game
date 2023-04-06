@@ -142,7 +142,6 @@ export class InputHandler {
 
   private applyPointerToDirection (pressed: boolean | undefined, x: number, y: number): void {
     const { relativeToTarget } = this
-    this.pointerSpecial = false
     if (pressed === true || (pressed === undefined && this.isPointerDown())) {
       if (relativeToTarget != null) {
         const bounds = {
@@ -158,9 +157,7 @@ export class InputHandler {
         }
         if (y <= bounds.top) {
           this.pointerYDown = -1
-          if (Math.abs(y - bounds.top) < 200) {
-            this.pointerSpecial = true
-          }
+          this.pointerSpecial = true
         } else if (y >= bounds.bottom) {
           this.pointerYDown = 1
         }
@@ -172,12 +169,14 @@ export class InputHandler {
     } else if (pressed === false) {
       this.pointerXDown = null
       this.pointerYDown = null
+      this.pointerSpecial = false
       logInputDirection(`END px=${this.pointerXDown} py=${this.pointerYDown}`)
     }
   }
 
-  reset (): void {
+  restart (): void {
     this.pointerXDown = null
     this.pointerYDown = null
+    this.pointerSpecial = false
   }
 }

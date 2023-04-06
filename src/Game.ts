@@ -58,7 +58,7 @@ export class Game extends Container {
   public boomTextures!: IGameOptions['textures']['boomTextures']
   public booms = new Container<Boom>()
   public floatingMessages = new Container<FloatingMessage>()
-  public particles = new ParticleContainer(200, { position: true, scale: true })
+  public particles = new ParticleContainer(300, { position: true, scale: true })
   public dusts = new ParticleContainer(50, { position: true, scale: true })
   constructor (options: IGameOptions) {
     super()
@@ -148,6 +148,7 @@ export class Game extends Container {
     this.enemyTime = 0
     this.lives = Game.options.maxLives
     this.player.restart()
+    this.inputHandler.restart()
     this.cityBackground.visible = true
     this.cityBackground.alpha = 1
     this.forestBackground.visible = false
