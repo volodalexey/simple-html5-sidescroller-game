@@ -6,6 +6,8 @@ import { StartModal } from './StartModal'
 import { InputHandler } from './InputHandler'
 import { EPlayerState } from './playerStates'
 import { GroundEnemy, type Enemy, ClimbingEnemy, FlyingEnemy } from './Enemy'
+import { type Boom } from './Particle'
+import { type FloatingMessage } from './FloatingMessage'
 
 export interface IGameOptions {
   viewWidth: number
@@ -38,8 +40,11 @@ export class Game extends Container {
     levelHeight: 500,
     groundMargin: 82,
     winningScore: 25,
-    spawnEnemyTime: 1000
+    spawnEnemyTime: 1000,
+    maxLives: 5
   }
+
+  public lives = Game.options.maxLives
 
   public player!: Player
   public inputHandler!: InputHandler
@@ -49,10 +54,14 @@ export class Game extends Container {
   public startModal!: StartModal
   public enemyTextures!: IGameOptions['textures']['enemyTextures']
   public enemies = new Container<Enemy>()
+  public boomTextures!: IGameOptions['textures']['boomTextures']
+  public booms = new Container<Boom>()
+  public floatingMessages = new Container<FloatingMessage>()
   constructor (options: IGameOptions) {
     super()
 
     this.enemyTextures = options.textures.enemyTextures
+    this.boomTextures = options.textures.boomTextures
     this.setup(options)
 
     this.player.setState(EPlayerState.SITTING)
@@ -94,6 +103,8 @@ export class Game extends Container {
     this.inputHandler = new InputHandler({ eventTarget: this, relativeToTarget: this.player })
 
     this.addChild(this.enemies)
+    this.addChild(this.booms)
+    this.addChild(this.floatingMessages)
 
     this.startModal = new StartModal({ viewWidth, viewHeight })
     this.startModal.visible = false
@@ -110,6 +121,12 @@ export class Game extends Container {
     while (this.enemies.children[0] != null) {
       this.enemies.children[0].removeFromParent()
     }
+    while (this.booms.children[0] != null) {
+      this.booms.children[0].removeFromParent()
+    }
+    while (this.floatingMessages.children[0] != null) {
+      this.floatingMessages.children[0].removeFromParent()
+    }
   }
 
   startGame = (): void => {
@@ -118,6 +135,7 @@ export class Game extends Container {
     this.time = 0
     this.speed = 0
     this.enemyTime = 0
+    this.lives = Game.options.maxLives
     this.player.restart()
     this.cityBackground.visible = true
     this.forestBackground.visible = false
@@ -179,10 +197,10 @@ export class Game extends Container {
     this.enemies.children.forEach((enemy) => {
       enemy.handleUpdate(deltaMS)
     })
-    // // HANDLE MESSAGES
-    // this.floatingMessages.forEach((message) => {
-    //   message.update()
-    // })
+    // HANDLE MESSAGES
+    this.floatingMessages.children.forEach((message) => {
+      message.handleUpdate()
+    })
     // // HANDLE PARTICLES
     // this.particles.forEach((particle, index) => {
     //   particle.update()
@@ -190,10 +208,10 @@ export class Game extends Container {
     // if (this.particles.length > this.maxParticles) {
     //   this.particles.length = this.maxParticles
     // }
-    // // HANDLE COLLISION SPRITES
-    // this.collisions.forEach((collision, index) => {
-    //   collision.update(deltaTime)
-    // })
+    // HANDLE COLLISION SPRITES
+    this.booms.children.forEach((collision) => {
+      collision.handleUpdate(deltaMS)
+    })
     for (let i = 0; i < this.enemies.children.length; i++) {
       const enemy = this.enemies.children[i]
       if (enemy.markedForDeletion) {
@@ -204,12 +222,20 @@ export class Game extends Container {
     // this.particles = this.particles.filter(
     //   (particle) => !particle.markedForDeletion
     // )
-    // this.collisions = this.collisions.filter(
-    //   (collision) => !collision.markedForDeletion
-    // )
-    // this.floatingMessages = this.floatingMessages.filter(
-    //   (message) => !message.markedForDeletion
-    // )
+    for (let i = 0; i < this.booms.children.length; i++) {
+      const boom = this.booms.children[i]
+      if (boom.markedForDeletion) {
+        boom.removeFromParent()
+        i--
+      }
+    }
+    for (let i = 0; i < this.floatingMessages.children.length; i++) {
+      const floatingMessage = this.floatingMessages.children[i]
+      if (floatingMessage.markedForDeletion) {
+        floatingMessage.removeFromParent()
+        i--
+      }
+    }
   }
 
   addEnemy (): void {

@@ -11,6 +11,7 @@ interface IInputHandlerOptions {
 export class InputHandler {
   public pointerXDown: number | null = null
   public pointerYDown: number | null = null
+  public pointerSpecial = false
   public eventTarget!: Container
   public relativeToTarget?: Container
   public interactiveChildren!: boolean
@@ -64,6 +65,9 @@ export class InputHandler {
       case 'KeyS':case 'ArrowDown':
         this.applyDownDirection(true)
         break
+      case 'ShiftLeft': case 'ControlLeft': case 'Space':
+        this.pointerSpecial = true
+        break
     }
   }
 
@@ -81,6 +85,9 @@ export class InputHandler {
         break
       case 'KeyS':case 'ArrowDown':
         this.applyDownDirection(false)
+        break
+      case 'ShiftLeft': case 'ControlLeft': case 'Space':
+        this.pointerSpecial = false
         break
     }
   }
@@ -130,7 +137,7 @@ export class InputHandler {
   }
 
   hasSpecial (): boolean {
-    return false
+    return this.pointerSpecial
   }
 
   private applyPointerToDirection (pressed: boolean | undefined, x: number, y: number): void {

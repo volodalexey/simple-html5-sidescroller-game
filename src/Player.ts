@@ -2,6 +2,8 @@ import { AnimatedSprite, Container, Graphics, type Texture } from 'pixi.js'
 import { Sitting, type PlayerState, EPlayerState, Running, Jumping, Falling, Rolling, Diving, Hit } from './playerStates'
 import { type Game } from './Game'
 import { logPlayerState } from './logger'
+import { Boom } from './Particle'
+import { FloatingMessage } from './FloatingMessage'
 
 export interface IPlayerOptions {
   game: Game
@@ -156,6 +158,7 @@ export class Player extends Container {
         this.currentAnimation = this.standAnimation
         break
     }
+    this.currentAnimation.currentFrame = 0
     this.currentAnimation.visible = true
   }
 
@@ -254,34 +257,42 @@ export class Player extends Container {
   }
 
   checkCollision (): void {
-    // this.game.enemies.forEach((enemy) => {
-    //   if (
-    //     enemy.x < this.x + this.width &&
-    //     enemy.x + enemy.width > this.x &&
-    //     enemy.y < this.y + this.height &&
-    //     enemy.y + enemy.height > this.y
-    //   ) {
-    //     enemy.markedForDeletion = true
-    //     this.game.collisions.push(
-    //       new CollisionAnimation(
-    //         this.game,
-    //         enemy.x + enemy.width * 0.5,
-    //         enemy.y + enemy.height * 0.5
-    //       )
-    //     )
-    //     if (
-    //       this.currentState === this.states[4] ||
-    //       this.currentState === this.states[5]
-    //     ) {
-    //       this.game.score++
-    //       this.game.floatingMessages.push(new FloatingMessage('+1', enemy.x, enemy.y, 150, 50))
-    //     } else {
-    //       this.setState(6, 0)
-    //       this.game.score -= 1
-    //       this.game.lives--
-    //       if (this.game.lives <= 0) this.game.gameOver = true
-    //     }
-    //   }
-    // })
+    this.game.enemies.children.forEach((enemy) => {
+      if (
+        enemy.x < this.x + this.width &&
+        enemy.x + enemy.width > this.x &&
+        enemy.y < this.y + this.height &&
+        enemy.y + enemy.height > this.y
+      ) {
+        enemy.markedForDeletion = true
+        const boom = new Boom({
+          game: this.game,
+          textures: this.game.boomTextures
+        })
+        boom.position.set(enemy.x + enemy.width * 0.5 - boom.width * 0.5, enemy.y + enemy.height * 0.5 - boom.height * 0.5)
+        this.game.booms.addChild(boom)
+        if (
+          this.currentState === this.states[EPlayerState.ROLLING] ||
+          this.currentState === this.states[EPlayerState.DIVING]
+        ) {
+          this.game.statusBar.addScore(1)
+          const floatingMessage = new FloatingMessage({
+            text: '+1',
+            targetX: this.game.statusBar.scoreText.x + this.game.statusBar.scoreText.width,
+            targetY: this.game.statusBar.scoreText.y
+          })
+          floatingMessage.position.set(enemy.x + enemy.width * 0.5, enemy.y + enemy.height * 0.5)
+          this.game.floatingMessages.addChild(floatingMessage)
+        } else {
+          this.setState(EPlayerState.HIT, 0)
+          this.game.statusBar.subScore(1)
+          this.game.lives--
+          this.game.statusBar.updateLives(this.game.lives)
+          if (this.game.lives <= 0) {
+            this.game.endGame(false)
+          }
+        }
+      }
+    })
   }
 }
