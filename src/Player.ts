@@ -2,7 +2,7 @@ import { AnimatedSprite, Container, Graphics, type Texture } from 'pixi.js'
 import { Sitting, type PlayerState, EPlayerState, Running, Jumping, Falling, Rolling, Diving, Hit } from './playerStates'
 import { type Game } from './Game'
 import { logPlayerState } from './logger'
-import { Boom } from './Particle'
+import { Boom } from './Boom'
 import { FloatingMessage } from './FloatingMessage'
 
 export interface IPlayerOptions {
@@ -284,10 +284,12 @@ export class Player extends Container {
           floatingMessage.position.set(enemy.x + enemy.width * 0.5, enemy.y + enemy.height * 0.5)
           this.game.floatingMessages.addChild(floatingMessage)
         } else {
-          this.setState(EPlayerState.HIT, 0)
+          if (this.currentState !== this.states[EPlayerState.HIT]) {
+            this.setState(EPlayerState.HIT, 0)
+            this.game.lives--
+            this.game.statusBar.updateLives(this.game.lives)
+          }
           this.game.statusBar.subScore(1)
-          this.game.lives--
-          this.game.statusBar.updateLives(this.game.lives)
           if (this.game.lives <= 0) {
             this.game.endGame(false)
           }

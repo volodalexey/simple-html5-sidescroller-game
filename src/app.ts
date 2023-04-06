@@ -17,6 +17,7 @@ async function run (): Promise<void> {
   await loaderScene.initializeLoader()
   const { citySpritesheet, forestSpritesheet, spritesheet: { textures, animations } } = loaderScene.getAssets()
   await SceneManager.changeScene(new MainScene({
+    app: SceneManager.app,
     viewWidth: SceneManager.width,
     viewHeight: SceneManager.height,
     textures: {

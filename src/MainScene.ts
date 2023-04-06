@@ -1,8 +1,10 @@
-import { Container } from 'pixi.js'
+import { type Application, Container } from 'pixi.js'
 import { type IScene } from './SceneManager'
 import { Game, type IGameOptions } from './Game'
+import { Dust, Fire, Splash } from './Particle'
 
 interface IMainSceneOptions {
+  app: Application
   viewWidth: number
   viewHeight: number
   textures: IGameOptions['textures']
@@ -17,6 +19,7 @@ export class MainScene extends Container implements IScene {
   constructor (options: IMainSceneOptions) {
     super()
 
+    this.prepareTextures(options)
     this.setup(options)
   }
 
@@ -39,5 +42,13 @@ export class MainScene extends Container implements IScene {
 
   handleUpdate (deltaMS: number): void {
     this.game.handleUpdate(deltaMS)
+  }
+
+  prepareTextures (options: IMainSceneOptions): void {
+    const graphics = Dust.prepareGraphics()
+    Dust.texturesCache = options.app.renderer.generateTexture(graphics)
+
+    Splash.texturesCache = options.textures.fireTexture
+    Fire.texturesCache = options.textures.fireTexture
   }
 }

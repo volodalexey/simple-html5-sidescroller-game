@@ -18,7 +18,7 @@ export class InputHandler {
   constructor ({ eventTarget, relativeToTarget, interactiveChildren = false }: IInputHandlerOptions) {
     this.eventTarget = eventTarget
     this.relativeToTarget = relativeToTarget
-    // this.interactiveChildren = interactiveChildren
+    this.interactiveChildren = interactiveChildren
 
     this.addEventLesteners()
   }
@@ -142,6 +142,7 @@ export class InputHandler {
 
   private applyPointerToDirection (pressed: boolean | undefined, x: number, y: number): void {
     const { relativeToTarget } = this
+    this.pointerSpecial = false
     if (pressed === true || (pressed === undefined && this.isPointerDown())) {
       if (relativeToTarget != null) {
         const bounds = {
@@ -157,6 +158,9 @@ export class InputHandler {
         }
         if (y <= bounds.top) {
           this.pointerYDown = -1
+          if (Math.abs(y - bounds.top) < 200) {
+            this.pointerSpecial = true
+          }
         } else if (y >= bounds.bottom) {
           this.pointerYDown = 1
         }

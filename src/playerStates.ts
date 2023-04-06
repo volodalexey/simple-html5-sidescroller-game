@@ -1,6 +1,5 @@
-// import { Dust, Splash, Fire } from './particles.js'
-
 import { type Game } from './Game'
+import { Dust, Fire, Splash } from './Particle'
 import { PlayerAnimation } from './Player'
 
 export enum EPlayerState {
@@ -73,14 +72,10 @@ export class Running extends PlayerState {
   }
 
   handleInput (): void {
-    // this.game.particles.unshift(
-    //   new Dust(
-    //     this.game,
-    //     this.game.player.x + this.game.player.width * 0.4,
-    //     this.game.player.y + this.game.player.height
-    //   )
-    // )
     const { inputHandler, player } = this.game
+    const dust = new Dust({ game: this.game })
+    dust.position.set(this.game.player.x + 20, this.game.player.y + this.game.player.height - 10)
+    this.game.dusts.addChild(dust)
     if (inputHandler.hasDirectionDown() && (!inputHandler.hasDirectionLeft() && !inputHandler.hasDirectionRight())) {
       player.setState(EPlayerState.SITTING, 0)
     } else if (inputHandler.hasDirectionUp()) {
@@ -148,14 +143,12 @@ export class Rolling extends PlayerState {
   }
 
   handleInput (): void {
-    // this.game.particles.unshift(
-    //   new Fire(
-    //     this.game,
-    //     this.game.player.x + this.game.player.width * 0.4,
-    //     this.game.player.y + this.game.player.height * 0.5
-    //   )
-    // )
     const { inputHandler, player } = this.game
+    const fire = new Fire({
+      game: this.game
+    })
+    fire.position.set(this.game.player.x, this.game.player.y)
+    this.game.particles.addChild(fire)
     if (!inputHandler.hasSpecial() && player.isOnGround()) {
       player.setState(EPlayerState.RUNNING, 1)
     } else if (!inputHandler.hasSpecial() && !player.isOnGround()) {
@@ -184,21 +177,19 @@ export class Diving extends PlayerState {
   }
 
   handleInput (): void {
-    // this.game.particles.unshift(
-    //   new Fire(
-    //     this.game,
-    //     this.game.player.x + this.game.player.width * 0.4,
-    //     this.game.player.y + this.game.player.height * 0.5
-    //   )
-    // )
     const { inputHandler, player } = this.game
+    const fire = new Fire({
+      game: this.game
+    })
+    fire.position.set(this.game.player.x, this.game.player.y)
+    this.game.particles.addChild(fire)
     if (player.isOnGround()) {
       player.setState(EPlayerState.RUNNING, 1)
-      // for (let i = 0; i < 30; i++) {
-      //   particles.unshift(
-      //     new Splash( player.x + player.width * 0.5, player.y + player.height)
-      //   )
-      // }
+      for (let i = 0; i < 30; i++) {
+        const splash = new Splash({ game: this.game })
+        splash.position.set(player.x, player.y + player.height / 2)
+        this.game.particles.addChild(splash)
+      }
     } else if (inputHandler.hasSpecial() && player.isOnGround()) {
       player.setState(EPlayerState.ROLLING, 2)
     }

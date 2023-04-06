@@ -1,4 +1,4 @@
-import { Container, type Texture } from 'pixi.js'
+import { Container, type DisplayObject, ParticleContainer, type Texture } from 'pixi.js'
 import { Background, type IBackgroundOptions } from './Background'
 import { type IPlayerOptions, Player } from './Player'
 import { StatusBar } from './StatusBar'
@@ -6,8 +6,9 @@ import { StartModal } from './StartModal'
 import { InputHandler } from './InputHandler'
 import { EPlayerState } from './playerStates'
 import { GroundEnemy, type Enemy, ClimbingEnemy, FlyingEnemy } from './Enemy'
-import { type Boom } from './Particle'
+import { type Boom } from './Boom'
 import { type FloatingMessage } from './FloatingMessage'
+import { type Dust, type Fire } from './Particle'
 
 export interface IGameOptions {
   viewWidth: number
@@ -36,7 +37,7 @@ export class Game extends Container {
   public levelWidth = 100
   static options = {
     maxSpeed: 2,
-    maxTime: 20000,
+    maxTime: 50000,
     levelHeight: 500,
     groundMargin: 82,
     winningScore: 25,
@@ -57,12 +58,16 @@ export class Game extends Container {
   public boomTextures!: IGameOptions['textures']['boomTextures']
   public booms = new Container<Boom>()
   public floatingMessages = new Container<FloatingMessage>()
+  public particles = new ParticleContainer(200, { position: true, scale: true })
+  public dusts = new ParticleContainer(50, { position: true, scale: true })
   constructor (options: IGameOptions) {
     super()
 
     this.enemyTextures = options.textures.enemyTextures
     this.boomTextures = options.textures.boomTextures
     this.setup(options)
+
+    this.addEventLesteners()
 
     this.player.setState(EPlayerState.SITTING)
   }
@@ -105,12 +110,12 @@ export class Game extends Container {
     this.addChild(this.enemies)
     this.addChild(this.booms)
     this.addChild(this.floatingMessages)
+    this.addChild(this.dusts)
+    this.addChild(this.particles)
 
     this.startModal = new StartModal({ viewWidth, viewHeight })
     this.startModal.visible = false
     this.addChild(this.startModal)
-
-    this.addEventLesteners()
   }
 
   addEventLesteners (): void {
@@ -127,6 +132,12 @@ export class Game extends Container {
     while (this.floatingMessages.children[0] != null) {
       this.floatingMessages.children[0].removeFromParent()
     }
+    while (this.dusts.children[0] != null) {
+      this.dusts.children[0].removeFromParent()
+    }
+    while (this.particles.children[0] != null) {
+      this.particles.children[0].removeFromParent()
+    }
   }
 
   startGame = (): void => {
@@ -138,7 +149,9 @@ export class Game extends Container {
     this.lives = Game.options.maxLives
     this.player.restart()
     this.cityBackground.visible = true
+    this.cityBackground.alpha = 1
     this.forestBackground.visible = false
+    this.forestBackground.alpha = 0
     this.statusBar.restart()
     this.cleanFromAll()
   }
@@ -178,8 +191,16 @@ export class Game extends Container {
     this.time += deltaMS
     this.statusBar.updateTime(this.time)
     if (this.time > Game.options.maxTime / 2) {
-      this.cityBackground.visible = false
-      this.forestBackground.visible = true
+      if (this.cityBackground.alpha > 0.1) {
+        this.cityBackground.alpha -= 0.01
+        this.forestBackground.visible = true
+        this.forestBackground.alpha = 1 - this.cityBackground.alpha
+      } else {
+        this.cityBackground.visible = false
+        this.cityBackground.alpha = 0
+        this.forestBackground.visible = true
+        this.forestBackground.alpha = 1
+      }
     }
     if (this.time > Game.options.maxTime) {
       this.endGame(this.statusBar.score > Game.options.winningScore)
@@ -201,36 +222,27 @@ export class Game extends Container {
     this.floatingMessages.children.forEach((message) => {
       message.handleUpdate()
     })
-    // // HANDLE PARTICLES
-    // this.particles.forEach((particle, index) => {
-    //   particle.update()
-    // })
-    // if (this.particles.length > this.maxParticles) {
-    //   this.particles.length = this.maxParticles
-    // }
+    // HANDLE PARTICLES
+    this.dusts.children.forEach((dust) => {
+      (dust as Dust).handleUpdate()
+    })
+    this.particles.children.forEach((fire) => {
+      (fire as Fire).handleUpdate()
+    })
     // HANDLE COLLISION SPRITES
     this.booms.children.forEach((collision) => {
       collision.handleUpdate(deltaMS)
     })
-    for (let i = 0; i < this.enemies.children.length; i++) {
-      const enemy = this.enemies.children[i]
-      if (enemy.markedForDeletion) {
-        enemy.removeFromParent()
-        i--
-      }
-    }
-    // this.particles = this.particles.filter(
-    //   (particle) => !particle.markedForDeletion
-    // )
-    for (let i = 0; i < this.booms.children.length; i++) {
-      const boom = this.booms.children[i]
-      if (boom.markedForDeletion) {
-        boom.removeFromParent()
-        i--
-      }
-    }
-    for (let i = 0; i < this.floatingMessages.children.length; i++) {
-      const floatingMessage = this.floatingMessages.children[i]
+    this.cleanMarkedForDeletion(this.enemies)
+    this.cleanMarkedForDeletion<Dust>(this.dusts)
+    this.cleanMarkedForDeletion<Fire>(this.particles)
+    this.cleanMarkedForDeletion(this.booms)
+    this.cleanMarkedForDeletion(this.floatingMessages)
+  }
+
+  cleanMarkedForDeletion<T extends { markedForDeletion: boolean } & DisplayObject = { markedForDeletion: boolean } & DisplayObject>(container: Container<T> | ParticleContainer): void {
+    for (let i = 0; i < container.children.length; i++) {
+      const floatingMessage: T = container.children[i] as T
       if (floatingMessage.markedForDeletion) {
         floatingMessage.removeFromParent()
         i--
