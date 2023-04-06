@@ -1,0 +1,135 @@
+{
+  "frames": {
+    "Forest-Layer-1.png": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 1667,
+        "h": 500
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1667,
+        "h": 500
+      },
+      "sourceSize": {
+        "w": 1667,
+        "h": 500
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Forest-Layer-2.png": {
+      "frame": {
+        "x": 1,
+        "y": 503,
+        "w": 1667,
+        "h": 500
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1667,
+        "h": 500
+      },
+      "sourceSize": {
+        "w": 1667,
+        "h": 500
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Forest-Layer-3.png": {
+      "frame": {
+        "x": 1,
+        "y": 1005,
+        "w": 1667,
+        "h": 500
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1667,
+        "h": 500
+      },
+      "sourceSize": {
+        "w": 1667,
+        "h": 500
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Forest-Layer-4.png": {
+      "frame": {
+        "x": 1,
+        "y": 1507,
+        "w": 1667,
+        "h": 500
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1667,
+        "h": 500
+      },
+      "sourceSize": {
+        "w": 1667,
+        "h": 500
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Forest-Layer-5.png": {
+      "frame": {
+        "x": 1,
+        "y": 2009,
+        "w": 1667,
+        "h": 500
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1667,
+        "h": 500
+      },
+      "sourceSize": {
+        "w": 1667,
+        "h": 500
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "forest-spritesheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1669,
+      "h": 2510
+    },
+    "scale": 1
+  }
+}
